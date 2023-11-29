@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+    <title> RJ's Food Court</title>
+        <style>
+            *{
+                margin: auto;
+                padding: auto;
+            }
+
+            .navbar{
+                margin: 10px;
+                padding: 10px;
+                display: flow-root;
+                align-items: baseline;
+                justify-content: right;
+                top: auto;
+                cursor: pointer;
+                text-align: right;
+            }
+
+            .background{
+                background-color: bisque;
+                background-size: cover;
+                background-blend-mode: overlay;
+                background: peachpuff;
+            }
+
+            .nav-list{
+                display: flex;
+                align-items: right;
+                justify-content: right;
+                text-align: right;
+            }
+
+            .logo img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                justify-content: left;
+
+            }
+
+            .nav-list li {
+            list-style: none;
+            margin: 10px;
+            padding: 5px;
+            font-size: medium;
+            text-align: right;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+            
+        }
+
+        .notification{
+            background-color: yellowgreen;
+            padding: 10px;
+            color: red;
+            position: relative;
+            font-size:medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+       
+
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .text-small {
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .all{
+            box-shadow: 0 0 50px rgba(70, 169, 39, 0.852);
+            margin: 20px;
+            padding: 20px;
+            background-color:cornflowerblue;
+        }
+
+        .showSlide {
+            display: none
+        }
+            .showSlide img {
+                width: 100%;
+            }
+        .slidercontainer {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .left, .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+            .left:hover, .right:hover {
+                background-color: rgba(115, 115, 115, 0.8);
+            }
+        .content {
+            color: #eff5d4;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .active {
+            background-color: #717171;
+        }
+        
+
+        .firstsection {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+        }
+
+        .secondsection {
+            width: 60%;
+            margin: auto;
+            background-color: pink;
+            height: 500px;
+            
+        }
+
+        .thirdsection {
+            background-color: powderblue;
+            color: red;
+            text-align: center;
+            font-size: larger;
+            height: 500px;
+        }
+
+        .fourthsection {
+            background-color: rosybrown;
+            height: 600px;
+        }
+
+        .fifthsection {
+            background-color: palegoldenrod;
+            height: 400px;
+        }
+
+        .Sixthsection {
+            background-color: plum;
+            height: 500px;
+            color: purple;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: purple;
+        }
+ nav ul img{
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+}
+        </style>
+</head>
+<body>
+    
+
+    <nav class="navbar background">
+        <ul class="nav-list">   
+            <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\logo.jpg">     
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Food">Food</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
+            <li><a href="#Photos">Photos</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+        </ul>
+
+        
+
+    </nav>
+
+        <div class="notification";>
+              <marquee><b>Anything, anytime, anywhere. We deliver it all.</b></marquee>
+        </div>
+
+        <div class="all">
+    
+    <section class="firstsection">
+        <p>
+           <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\background.jpg" height="500" width="1180"> 
+
+        </p>      
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <h1 class="text-big" id="Food">Food</h1><br>
+            <div  class="slidercontainer">
+                <div class="showSlide fade">
+                    <a href="https://www.pizzahut.co.in/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\pizza.jpg" class="slide" alt="Pizza" height="500" width="1000"></a>
+                    <a href="https://www.burgerking.in/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\burger.jpg" class="slide" alt="Burger" height="500" width="1000"></a>
+                    <a href="https://www.bigbasket.com/pc/beverages/energy-soft-drinks/cold-drinks/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\cold-drinks.jpg" class="slide" alt="Cold-drinks" height="500" width="1000"></a>
+                    <a href="https://www.frugivore.in/subcategory/frozen-foods/ice-creams-frozen-desserts" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\desserts.jpg" class="slide" alt="Desserts" height="500" width="1000"></a>
+                    <a href="https://amul.com/products/icecream.php" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ice-cream.jpg" class="slide" alt="ice-cream" height="500" width="1000"></a>
+                    <a href="https://hongskitchen.in/order-online/category/noodles-rice.240860" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\noodles.jpeg" class="slide" alt="noodles" height="500" width="1000"></a>
+                    <a href="https://bombaysaladco.com/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\salad.jpg" class="slide" alt="salad" height="500" width="1000"></a>
+                    <a href="https://southindianstore.com/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\south-indian-food.jpg" class="slide" alt="south-indian-food" height="500" width="1000"></a>
+                    <a href="https://biryanibykilo.com/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\biryani.jpeg" class="slide" alt="Biryani" height="500" width="1000"></a>
+                    <a href="https://freshlist.in/fresh-juices" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\juice.webp" class="slide" alt="Juice" height="500" width="1000"></a>
+                    <a href="https://www.winni.in/cake/navi-mumbai" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\cake.jpg" class="slide" alt="Cake" height="500" width="1000"></a>
+                    <a href="https://thalibox.in/product/29625624/Veg-Thali" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\thali.webp" class="slide" alt="Thali" height="500" width="1000"></a>
+                    <a href="https://www.dunzo.com/mumbai/unique-paratha-andheri-east" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\paratha.webp" class="slide" alt="Paratha" height="500" width="1000"></a>
+                    <a href="https://www.wowmomo.com/" target="_blank"><img class="icon" src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\momos.jpg" class="slide" alt="Momos" height="500" width="1000"></a><br>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="AboutUs">About Us</h1><br>
+                    <p class="text-small"></p>
+                    Craving recepies from your childhood days? We got it.
+                    We are a food tech platform,proud pioneers in intercity perishable and non perishable food delivery, which 
+                    aims to connect people ,back to their roots through food,delivering from iconic brands and restaurants from 
+                    more than 20 cities all over the country. Our specialized cold chain logistics keep the food uber fresh till 
+                    doorstep delivery.</p>
+                    <p>
+                    Justmyroots Is a food revolution, envisioned and created by a group of ex- corporates and ex-bankers with a 
+                    fervent passion for good food. We are currently working with 500+ top brands with a premium portfolio of 5000+ 
+                    products. We’re delivering in 20000+pin codes across Metros,Tier1 & Tier2 cities and expanding!
+                    <br><br>
+                </p>
+                <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\i1.jpg" height="200" width="200">
+                <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\i2.jpg" height="200" width="200">
+                <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\i3.jpg" height="200" width="200">
+            </div>
+        </div>
+    </section>
+
+    <section class="fourthsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="ContactUs">Contact Us</h1><br>
+                <p class="text-small">
+                    Email:rj@foodcourt.com<br><br>
+                    Call: +91 9325860765<br><br>
+                    <form>
+                        <label>Firstname : <input type="text" placeholder="Enter First name" size="15"/></label>
+                        <br><br>
+
+                        <label>Lastname : <input type="text" placeholder="Enter Last name" size="15"/></label>
+                        <br><br>
+
+                        <input type="text" name="Country code" value="+91" size="2" />
+                        <input type="text" name="Phone" size="10" />
+                        <br><br>
+
+                        <label>Address :</label>
+                        <textarea cols="70" rows="5" value="Address" placeholder="Enter your current address" ></textarea>
+                        <br><br>
+
+                        <label>Office Address :</label>
+                        <textarea cols="70" rows="5" value="Office Address" placeholder="Enter your Office address" ></textarea>
+                        <br><br>
+
+                       <label for="email"> E-mail :</label>
+                       <input type="email" id="email" name="email" placeholder="Enter your email address" />
+                       <br><br>
+
+                       <input type="radio" id="Pick-up" name="Pick-up" value="Pick-up" />
+                       <lable for="Pick-up">Pick-up</lable>
+                       <input type="radio" id="Dine-in" name="Dine-in" value="Dine-in" />
+                       <lable for="Dine-in">Dine-in</lable>
+                       <input type="radio" id="Delivery" name="Delivery" value="Delivery" />
+                       <lable for="Delivery">Delivery</lable>
+                       <br><br>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifthsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="Photos">Photos</h1><br>
+                <p class="text-small">
+                    <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ph1.webp" height="200" width="200">
+                    <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ph2.jpg" height="200" width="200">
+                    <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ph3.jpeg" height="200" width="200">
+                    <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ph4.jpeg" height="200" width="200">
+                    <img src="C:\Users\rutuj\OneDrive\Desktop\webprojectimg\ph5.jpg" height="200" width="200">
+                </p>
+                <br>
+                <a href="https://www.google.com/search?q=food+items+photos&sca_esv=570966760&rlz=1C1ONGR_enIN1067IN1068&hl=en&tbm=isch&sxsrf=AM9HkKmJJ8yv40jZJIcLwyxh2SSoNqtU3g:1696515662001&source=lnms&sa=X&ved=2ahUKEwj0uo6rjd-BAxUc1DgGHaDmCl4Q_AUoAXoECAMQAw&biw=1280&bih=563&dpr=1.5">See More...</a><br><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="Sixthsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="Reviews">Reviews</h1><br>
+                <p class="text-small">
+                    <ul>
+                        <li>“Their brunch is awesome, I love the avocado toast and the California focaccia.
+                             Pizza is really good as well.” – Alison B.</li>
+                        <li>“Best Pizza EVER! Not just on the lower Cape…. anywhere!” – Ellen H.</li>
+                        <li>“I was so impressed with my breakfast this morning! I tried the Fried Green Tomato
+                             Benedict and my boyfriend got the Crab Cakes Benedict. We both finished our whole 
+                             plates and were so impressed with the quality of the food and the short amount of 
+                             time it took to receive it. Our waitress was sweet and helpful. I will definitely 
+                             be back!” – Julia L.</li>
+                        <li>“This is always our breakfast stop before heading home from vacation. Always delicious.
+                             Always great service. Always worth the stop.” – Kristine R.</li>
+                        <li>“I won a $30. Gift card for Fairway Restaurant in Eastham from Cape 104.7 radio. Brought 
+                            my sister for breakfast. The breakfast was crab cakes with spinach and poached eggs and 
+                            hollandaise sauce. Jill got fried green tomatoes with spinach and poached eggs with hollandaise 
+                            sauce. Both were Excellent. The restaurant is very clean. Professional Staff. I would recommend 
+                            Fairway Restaurant.” – James T.</li>
+                        <li>“Breakfast was delicious. Like a good homestyle country savory breakfast (and Im from the south, 
+                            thats saying a lot)… Enjoyed the whole experience and definitely recommend this place for a place 
+                            to eat on the cape.” – Ronnie E.</li>
+                        <li>“The absolute best red sauce. Weather on Pizza or Pasta, it’s honestly delicious. Portions are 
+                            huge and the staff is extremely friendly and courteous.” – Rick H.</li>
+                        <li>“I go to breakfast or lunch weekly with a group of older women. In addition to the really good 
+                            food, I must say that our waitress today was so kind and patient, as the group tried to decide 
+                            what they wanted and were talking non-stop. 🤪 My husband and I love dinner there as well. We are 
+                            so fortunate to have this outstanding restaurant in our town of Eastham. It’s a gem.” – Martha D.</li>
+                        <li>I love this restaurant. People say it is expensive, but, my motto is you get what you pay for. I 
+                            promise after trying this, you will understand the quality is superior. Everytime I order this food 
+                            it is consistently delicious as well as fresh. - Theresa carr</li>
+                        <li>Just had a wonderful evening at this five-month-old find. Mixed grill was generous, delicious, and 
+                            as well prepared as it was sizzling when it arrived at the table. Great samosas, Nan bread, and superb 
+                            eggplant dish. The service was extremely professional and friendly at the same time. This is the best, 
+                            most relaxing spot for Indian cuisine in the Princeton area. Mmmm. - Ely D. Princeton, NJ</li>
+                    </ul>
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved by RJ's Food Court
+        </p>
+    </footer>
+</body>
+
+</html>
